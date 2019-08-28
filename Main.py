@@ -10,7 +10,7 @@ def factorial(n):
 
 # ------ Methods to compute PI ------
 # Approximate PI by the Monte-Carlo's method
-# The method consist to take a square of 1 by 1 dimension,
+# The method consists to take a square of 1 by 1 dimension,
 # then, place random points with both x and y coordinates
 # between 0 and 1. Finally, check if x² + y² < 1, it represents
 # the place of the generated point (inside a 1 radius circle)
@@ -28,6 +28,8 @@ def monteCarloMethod(iteration):
     return number * 4 / iteration
 
 # Approximate PI by the Ramanujan's method
+# The method uses an equation found by Ramanujan and needs
+# less iteration than Monte-Carlo to get a better result.
 def ramanujanMethod(iteration):
     sum = 0
     for i in range(0, iteration):
