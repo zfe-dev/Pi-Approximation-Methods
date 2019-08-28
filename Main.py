@@ -36,5 +36,6 @@ def ramanujanMethod(iteration):
         sum = sum +((factorial(4 * i) / (factorial(i))**4 ) * ((26390 * i + 1103) / 396**(4 * i)))
     return 1 / (sum * math.sqrt(8)/9801)
 
+
 print("Approximation de Pi par Monte-Carlo : "+str(monteCarloMethod(1000000)))
 print("Approximation de Pi par Ramanujan : "+str(ramanujanMethod(10)))
